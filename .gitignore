@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/.vercel/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data caches / generated artifacts
+data/cache/
+data/raw/*.parquet
+data/raw/results_*
+data/raw/qualifying_*
+data/raw/schedule_*.csv
+data/processed/matchups_*.parquet
+data/processed/rank_features_*.parquet
+data/processed/*.py
+
+# Keep small, reproducible inputs checked in
+!data/raw/schedule_2026.csv
+!data/raw/driver_list_2026.csv
+!data/processed/output.csv
+
+# Local DB
+backend/app/data/*.db
+backend/app/data/*.sqlite
+backend/app/data/*.sqlite3

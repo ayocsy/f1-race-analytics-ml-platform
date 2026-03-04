@@ -1,0 +1,9 @@
+For teammate vs teammate, we only consider two factor:
+who are the teammates in a race and who finished ahead.
+
+First stage we need to know which races exist so that we can make sure when we do training we have all data to feed the model. Therefore, we need to the data which include all circult of the season. 
+
+Qualifying results 
+
+
+ML is about Improving over what you could already do with logic or rules to get the prediction.
