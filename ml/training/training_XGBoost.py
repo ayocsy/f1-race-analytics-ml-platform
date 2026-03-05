@@ -59,9 +59,9 @@ def main():
         f1 = f1_score(y_test, y_pred)
         cm = confusion_matrix(y_test, y_pred)
 
-        joblib.dump(model, REPO_ROOT / "ml" / "artifacts" / "model_quali.pkl")
+        joblib.dump(model, REPO_ROOT / "ml" / "artifacts" / "model_XGBoost.pkl")
         (REPO_ROOT / "ml" / "artifacts" / "feature_list.json").write_text(json.dumps(features, indent=2))
-        (REPO_ROOT / "ml" / "artifacts" / "metrics_quali.json").write_text(json.dumps({
+        (REPO_ROOT / "ml" / "artifacts" / "metrics_XGBoost.json").write_text(json.dumps({
             "accuracy": acc,
             "f1": f1,
             "confusion_matrix": cm.tolist()
