@@ -80,8 +80,7 @@ If you want to rebuild the model artifacts:
 
 Both write artifacts under `ml/artifacts/` (model + feature list + metrics).
 
-## Git / Repo Size
-
-This repo can get huge if you commit cached telemetry and generated datasets.
-The root `.gitignore` is set up to ignore big/derived data (especially `data/cache/`) and keep only small, reproducible inputs.
+## Result 
+<img width="1311" height="697" alt="image" src="https://github.com/user-attachments/assets/2f361dbe-c7e1-45c6-8096-ad19d1354ab6" />
+Users can select a constructor and a Grand Prix, then input the qualifying positions of a driver and their teammate. Based on this information, the platform predicts the probability of the driver outperforming their teammate.
 
